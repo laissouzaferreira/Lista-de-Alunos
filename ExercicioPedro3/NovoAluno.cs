@@ -16,7 +16,7 @@ namespace ExercicioPedro3
 
         public List<Alunos> AlunosList; //atributo da classe curso -- tipo de dados super dinâmico, pode receber qualquer tipo de dados. --List<Alunos>--
 
-        public char sexo;
+        public string sexo;
 
         public NovoAluno(ListView listView1, List<Alunos> AlunosList)
         {
@@ -76,7 +76,7 @@ namespace ExercicioPedro3
                 {
                     button2.Enabled = false;
                 }
-                sexo = 'F';
+                sexo = "F";
             }
         }
 
@@ -93,7 +93,7 @@ namespace ExercicioPedro3
                 {
                     button2.Enabled = false;
                 }
-                sexo = 'M';
+                sexo = "M";
             }
         }
 

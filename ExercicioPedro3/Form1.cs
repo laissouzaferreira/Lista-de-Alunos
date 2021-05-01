@@ -25,7 +25,7 @@ namespace ExercicioPedro3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Alunos alunos1 = new Alunos("Felipe Augusto", "1991, 06, 04", 2021, 'M', "ADM");
+            /*Alunos alunos1 = new Alunos("Felipe Augusto", "1991, 06, 04", 2021, 'M', "ADM");
             Alunos alunos2 = new Alunos("Fabiano Lopes", "1981, 09, 06", 2022, 'M', "Ed Fisica");
             Alunos alunos3 = new Alunos("Lais Barbosa", "1988, 09, 06", 2023, 'F', "Fisica");
             Alunos alunos4 = new Alunos("Laura Santos ", "1993, 09, 97", 2024, 'F', "Música");
@@ -33,7 +33,9 @@ namespace ExercicioPedro3
             AlunosList.Add(alunos1);
             AlunosList.Add(alunos2);
             AlunosList.Add(alunos3);
-            AlunosList.Add(alunos4);
+            AlunosList.Add(alunos4);*/
+
+            Alunos.GetAlunos(AlunosList);
 
             foreach(Alunos Item in AlunosList)
             {
@@ -42,7 +44,7 @@ namespace ExercicioPedro3
 
                 row.SubItems.Add(Item.NumMatrciula.ToString());
 
-                row.SubItems.Add(Item.Sexo.ToString());
+                row.SubItems.Add(Item.Sexo);
 
                 row.SubItems.Add(Item.Curso);
 
